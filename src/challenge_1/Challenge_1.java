@@ -1,15 +1,9 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
+
 package challenge_1;
 
 import java.util.Scanner;
 
-/**
- *
- * @author palme
- */
+
 public class Challenge_1 {
 
     public static void main(String[] args) {
@@ -28,14 +22,17 @@ public class Challenge_1 {
         int n = 2;
         int Rt = 6371;
         int h = 24;
+        double Pi = 3.1416;
         double distancia = Math.toRadians(a);
         double velocidad;
-        double Pi = 3.1416;
-
+        
+        // V = 2πRtCosα / t
         distancia = n * Rt * Pi * Math.cos(distancia);
+        // V = d / t
         velocidad = distancia / h;
-        System.out.println("La distancia es: " + distancia);
-        System.out.println("VELOCIDAD: " + velocidad + "Km/h");
+        
+        System.out.println("La distancia es: " + distancia + " Km");
+        System.out.println("VELOCIDAD: " + velocidad + " Km/h");
 
     }
 
